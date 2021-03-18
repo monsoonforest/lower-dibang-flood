@@ -16,7 +16,7 @@ rain <- list.files(pattern = ".*chirps.*\\.csv$$", recursive = FALSE)
 rainfall <- lapply(rain,read.csv)
 
 ## SET THE NAMES OF EACH LIST FROM THE FILENAME
-names(rainfall) <- c("ahsun", "anpum_north", "anpum_west", "champet_bodo", "dambuk", "nizamghat_east", "nizamghat_west", "yagpo")
+names(rainfall) <- c("ahsun", "ANPUM-LOKLUNG", "anpum_west", "champet_bodo", "dambuk", "nizamghat_east", "nizamghat_west", "yagpo")
 
 ## REMOVE ALL NA VALUES
 rain_na_omit <- lapply(rainfall,na.omit)
@@ -65,7 +65,7 @@ mean_monthly_rain_1981_2020 <- lapply(monthly_rain, function(x,...){x %>% summar
 #mean_daily_rain_1981_2020 <- lapply(daily_monthly_rain, function(x,...){x %>% summarize(mean_daily = mean(total), SD=sd(total))})
 
 ## FILTER ALL YEARS BEFORE 2003 TO COMPARE THE LONG TERM MEAN 
-longtermfilter <- lapply(monthly_rain, function(x,y,...){x %>% filter(year>1986) %>% filter(year<2000)})
+longtermfilter <- lapply(monthly_rain, function(x,y,...){x %>% filter(year>2011) %>% filter(year<2021)})
 
 
 ## JOIN THE LONG TERM MEAN WITH THE DATA FROM 2009 AND LATER
@@ -189,13 +189,13 @@ label = "Loklung destroyed by major flood.", color="white", family="Arial Narrow
 
 ## 2016
 annotate(geom = "curve", x = as.Date("2016-12-01"), y = 1050,color="white",
-xend = as.Date("2016-09-01"), yend = 600,  curvature = .3, 
+xend = as.Date("2016-08-15"), yend = 650,  curvature = .3, 
 arrow = arrow(length = unit(2, "mm"))) 											+
 annotate("text", x = as.Date("2017-07-15"), y = 1100, size=4,
 	label = "Destruction of Anpum complete.", color="white", family="Arial Narrow") 		
 
 																		    )
 
-ggsave(filename="anpum-rainfall-1987-2000", plot=p, device=cairo_ps ,height=10, width=40,dpi=300,units="cm", fallback_resolution = 600)
+ggsave(filename="anpum-rainfall-2012-2020", plot=anpumplot, device=cairo_ps ,height=10, width=40,dpi=300,units="cm", fallback_resolution = 600)
 
 
