@@ -65,7 +65,7 @@ mean_monthly_rain_1981_2020 <- lapply(monthly_rain, function(x,...){x %>% summar
 #mean_daily_rain_1981_2020 <- lapply(daily_monthly_rain, function(x,...){x %>% summarize(mean_daily = mean(total), SD=sd(total))})
 
 ## FILTER ALL YEARS BEFORE 2003 TO COMPARE THE LONG TERM MEAN 
-longtermfilter <- lapply(monthly_rain, function(x,y,...){x %>% filter(year>2011) %>% filter(year<2021)})
+longtermfilter <- lapply(monthly_rain, function(x,y,...){x %>% filter(year>1986) %>% filter(year<2000)})
 
 
 ## JOIN THE LONG TERM MEAN WITH THE DATA FROM 2009 AND LATER
@@ -196,6 +196,6 @@ annotate("text", x = as.Date("2017-07-15"), y = 1100, size=4,
 
 																		    )
 
-ggsave(filename="anpum-rainfall-2012-2021.jpeg", plot=anpumplot, device=cairo_ps ,height=10, width=40,dpi=300,units="cm", fallback_resolution = 600)
+ggsave(filename="anpum-rainfall-1987-2000", plot=p, device=cairo_ps ,height=10, width=40,dpi=300,units="cm", fallback_resolution = 600)
 
 
