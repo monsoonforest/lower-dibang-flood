@@ -1,0 +1,31 @@
+Captions for figures
+
+figure 1: Rainfall map for 30th May 1998 showing the after effects of tropical cyclone 01B across Assam and Arunachal.
+
+figure 2: Landsat-5 image of the Siang, Dibang and Luhit confluence area in 1987
+
+figure 3: Landsat-5 image of the Siang, Dibang and Luhit confluence area in 1998. Note the movement of the Dibang's main channel and the start of the Luhit's flow below Dibru Saikhowa National park.
+
+figure 4: January 2021 PlanetScope image of the landslides at Nizamghat. Chihi Cheta is now approximately 1 sq. km. in area and the landslide on the right bank is approximately 7 sq. km. in area. Perhaps India's largest ongoing landslide.
+
+figure 5: January 2021 PlanetScope image of the Siang's flood-basin at Pasighat, showing the main channel flowing along the left bank.
+
+figure 6: December 2011 RapidEye-3 image of Anpum-Loklung area before major floods.
+
+figure 7: December 2012 RapidEye-2 image of Anpum-Loklung area showing sediment deposition and expansion of Anpum river after floods.
+
+figure 8a: October 2015 RapidEye-3 image of Anpum-Loklung area showing expansion of Anpum river and start of the Dibang's new channel.
+
+Figure 8b: August 11th 2015 Landsat-7 image of Anpum-Loklung area before the start of the flood.
+
+Figure 8c: September 19th 2015 Landsat-7 image of Anpum-Loklung area after the avulsion and opening of the new channel of the Dibang.
+
+Figure 8d: October 2018 RapidEye-1 image of Anpum-Loklung area showing complete destruction of Anpum and Loklung. Loklung relocated further east. Anpum relocated in the north.
+
+Figure 9: January 2021 PlanetScope image of Anpum-Loklung area showing continuing expansion of Dibang's channel.
+
+Figure 10: 1987 Landsat-5 image of Siang, Dibang and Luhit confluence area.
+
+Figure 11: January 2021 PlanetScope image of Siang, Dibang and Luhit confluence area showing sediment deposits and changes in the Siang and Dibang's channels.
+
+
