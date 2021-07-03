@@ -1,5 +1,6 @@
 ###        ​ Tropical cyclone 01B, May 1998
-![tropical cyclone 01B]()
+![tropical cyclone 01B](https://github.com/monsoonforest/lower-dibang-flood/blob/main/datasets/images-for-technical-doc/01b.vis.gif)
+*From MONTHLY GLOBAL TROPICAL CYCLONE SUMMARY by Gary Padgett - "Tropical Cyclone 01B made landfall very near Chittagong around 0600 UTC on the 20th and continued on its north-northeastward course farther inland.The last JTWC warning, issued at 1800 UTC on 20 May,placed the center of the decaying depression about 150 nm northeast of Chittagong."*
 Before the cyclone’s landfall on 20th May 1998, Bangladesh relocated 650,000 people. The cyclone destroyed thousands of homes and taking lives of as many as 35 people there. After 10 days of widespread rainfall across Bangladesh, northeast India and Myanmar the remnants of 01B dumped an estimated amount greater than 200 mm on 30th May across a 16000 km2 area in Assam and Arunachal Pradesh.
 ![figure 1](https://github.com/monsoonforest/lower-dibang-flood/blob/main/datasets/images-for-technical-doc/fig-1-rainfall-30th-may.jpeg)
 *figure 1: Rainfall map for 30th May 1998 showing the after effects of tropical cyclone 01B across Assam and Arunachal.*
