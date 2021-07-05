@@ -58,6 +58,9 @@ An incident sums up the ecological crises of this region – on the day I leave 
 ![figure 10](https://github.com/monsoonforest/lower-dibang-flood/blob/main/datasets/images-for-part-i/fig-10-IMG_20210304_114151-last-remaining-trees.jpg)
 *Figure 10: The largest of trees in this wilderness were spared because they were soft wooded rejects, unfit for logging. Cycle for scale.*
 
+![figure 11](https://github.com/monsoonforest/lower-dibang-flood/blob/main/datasets/images-for-part-i/fig-11-flooded-grasslands.jpeg)
+*Figure 11: Flooded monsoon grasslands recover rapidly in this dynamic landscape. This ecosystem seems to have evoloved 5 million years ago atleast in response to seasonally flooding rivers. Little wonder then that it is habitat to several endemic flora and fauna such as Pygmy Hog, Hispid hare, Greater One-Horned Rhinoceros etc. Reddish-brown flowering Semul trees can be observed in the distance beyond the remains of the bridge over Anpum river.*
+
 ### References
 Kingdon-Ward, F. (1953). The Assam earthquake of 1950. The Geographical Journal, 119(2), 169-182. https://sci-hub.do/10.2307/1791200
 
