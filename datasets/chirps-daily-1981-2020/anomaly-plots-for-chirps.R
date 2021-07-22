@@ -80,7 +80,7 @@ mean_DOY_rain_1981_2020 <- lapply(daily_rain, function(x,...){x %>% group_by(DOY
 ## FILTER ALL YEARS BEFORE 2003 TO COMPARE THE LONG TERM MEAN 
 longtermfilter_monthly <- lapply(monthly_rain, function(x,y,...){x %>% filter(year>2011) %>% filter(year<2021)})
 
-longtermfilter_daily <- lapply(daily_rain, function(x,y,...){x %>% filter(year>2014) %>% filter(year<2016)})
+longtermfilter_daily <- lapply(daily_rain, function(x,y,...){x %>% filter(year>2000) %>% filter(year<2011)})
 
 ## JOIN THE LONG TERM MEAN WITH THE DATA FROM 2009 AND LATER
 #LTmean_join_months <- map2(longtermfilter_monthly, mean_monthly_rain_1998_2019, right_join, by="month")
@@ -116,7 +116,7 @@ names(departure_cat)
 
 
 ## PLOTTING FUNCTION TO NEST WIHTIN LAPPLY
-departure_plot <- function(P,TITLE,...) {ggplot(P %>% filter(date_time >= as.Date('2015-01-01') & date_time <= as.Date('2015-12-31'))) +
+departure_plot <- function(P,TITLE,...) {ggplot(P %>% filter(date_time >= as.Date('2010-01-01') & date_time <= as.Date('2010-12-31'))) +
 
 ## A GEOM RECTANGLES TO SHOW BOXES OF THE RAINFALL
 ##                                geom_rect(data=x, aes(xmin=start, xmax=end, ymin=-300, ymax=300), 
@@ -147,10 +147,10 @@ axis.ticks.y = element_line(colour = 'grey80', size = 0.3),
 										   axis.ticks.length.y = unit(1, "mm"), legend.position="middle") +
 
 ## PLOT TITLE
-labs(title=TITLE, subtitle="Daily rainfal (bars) and expected rainfall (shaded) for 2015.\nData source: Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS).") + 
+labs(title=TITLE, subtitle="Daily rainfal (bars) and expected rainfall (shaded) for 2010.\nData source: Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS).") + 
 
 ## X-AXIS TITLE
-   							    		  									   xlab("2015") +
+   							    		  									   xlab("2010") +
 
 ## Y-AXIS TITLE
 															                 ylab("RAINFALL [mm]") + 
@@ -160,8 +160,8 @@ labs(title=TITLE, subtitle="Daily rainfal (bars) and expected rainfall (shaded) 
 									        
 
 ## Y-AXIS TICKS AND BREAKS
-                    scale_y_continuous(breaks=c(0,50,100,150, 200,250,300, 350, 400,450)) +
-                    transition_reveal(date_time) 
+                    scale_y_continuous(breaks=c(0,50,100,150, 200,250,300, 350, 400,450)) 
+                   # transition_reveal(date_time) 
 					
                       }
 
@@ -169,7 +169,7 @@ p <- departure_plot(LTmean_join_DOY[[2]], "Anpum, Loklung, Lower Dibang Valley, 
 
 p
 
-ggsave(filename="anpum-rainfall-2015.svg", plot=p, device="svg" ,height=10, width=40,dpi=300,units="cm")
+ggsave(filename="anpum-rainfall-2010.svg", plot=p, device="svg" ,height=10, width=40,dpi=300,units="cm")
 
 
 
