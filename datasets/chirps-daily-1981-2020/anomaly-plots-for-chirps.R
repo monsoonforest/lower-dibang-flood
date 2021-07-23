@@ -130,9 +130,7 @@ departure_plot <- function(P,TITLE,...) {ggplot(P %>% filter(date_time >= as.Dat
 
 ## SEGMENTS FOR THE BARS SHOWING total precip
 ##  			  		geom_segment( aes(x=date, xend=date, y=0, yend=total-departure, color=mycolor), size=1.3) +
-
 						# geom_step(aes(x=date, ymin=mean_monthly - SD, ymax = mean_monthly + SD),size=0.6, color="grey70") +
-
 ##						geom_line(aes(x=date,y=total), colour="white", size = 0.3) +
 
 ## SET THE hrbr THEME   			  	   
@@ -156,14 +154,13 @@ labs(title=TITLE, subtitle="Daily rainfal (bars) and expected rainfall (shaded) 
 															                 ylab("RAINFALL [mm]") + 
 
 ## TIME SERIES LABEL TICKS
-									              scale_x_date(date_labels="%B", date_breaks = "1 month") +
+									              scale_x_date( date_breaks = "7 days", date_labels="%b %d") +
 									        
 
 ## Y-AXIS TICKS AND BREAKS
                     scale_y_continuous(breaks=c(0,30,60,90,120,150,175, 200,250,300, 350, 400,450)) 
                    # transition_reveal(date_time) 
-					
-                      }
+					                    }
 
 p <- departure_plot(LTmean_join_DOY[[2]], "Anpum, Loklung, Lower Dibang Valley, Arunachal Pradesh, India")
 
