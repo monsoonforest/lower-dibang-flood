@@ -4,13 +4,9 @@
 ////////////////////////////////SCRIPT TO EXPORT CHIRPS DAILY PRECIPITATION ESTIMATES TO A CSV////////////////////
 
 // CREATE A RECTANGLE OF THE GIVEN EXTENTS
-//var geometry = ee.Geometry.Rectangle(95.402202,27.71712,96.19871,29.214069);
-
-//CENTER THE VIEW TO "RECTANGLE"
-Map.centerObject(dibang);
-
-//ADD THE LAYER
-Map.addLayer(dibang, {}, 'rectangle')
+var geometry = ee.Geometry.Rectangle(95.402202,27.71712,96.19871,29.214069);
+Map.centerObject(geometry)
+Map.addLayer(geometry)
 
 // CREATE A VARIABLE OF THE TRMM 3-HOURLY DATASET
 //var trmm = ee.ImageCollection('TRMM/3B42').select('precipitation').filterDate("1998-01-01", "2019-12-31")
@@ -25,7 +21,7 @@ var dataset = chirps.select('precipitation');
 // resolution of chirps dataset = 0.05 degrees or 5550 m
 var dictionary = ee.Image.pixelLonLat().reduceRegion({
   reducer: ee.Reducer.toCollection(['longitude', 'latitude']), 
-  geometry: siang, 
+  geometry: geometry, 
   scale: 5550
 });
 
